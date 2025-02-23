@@ -33,11 +33,11 @@ function App() {
       />
  
       {/* Seções do site */}
-      <div className="bg-[var(--color-mint-100)]" >
-      <div ref={homeRef} className="section text-center h-svh"><Home /></div>
-      <div ref={aboutMeRef} className="section text-center h-svh"><AboutMe /></div>
-      <div ref={articlesRef} className="section text-center h-svh"><Articles /></div>
-      <div ref={contactRef} className="section text-center h-svh"><Contact /></div>
+      <div className="bg-[var(--color-mint-100)] w-[1500px] sm:w-full m-auto" >
+      <div ref={homeRef} className="section text-center h-svh  pt-[80px] pl-1 pr-1"><Home /></div>
+      <div ref={aboutMeRef} className="section text-center h-svh bg-[var(--color-mint-300)] pt-[80px] pl-1 pr-1"><AboutMe /></div>
+      <div ref={articlesRef} className="section text-center h-svh bg-zinc-500 pt-[80px] pl-1 pr-1" ><Articles /></div>
+      <div ref={contactRef} className="section text-center h-svh bg-zinc-400 pt-[80px] pl-1 pr-1"><Contact /></div>
       </div>
       </>
   );

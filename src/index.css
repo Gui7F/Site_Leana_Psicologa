@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+  background-color: #4B5563;
+}
+
 .lato-thin {
     font-family: "Lato", serif;
     font-weight: 100;
