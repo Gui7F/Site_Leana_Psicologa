@@ -57,24 +57,24 @@ function Navbar({
 
   return (
     <>
-      <div className="flex justify-around items-center border border-b-black  bg-[var(--color-mint-200)] h-[67px]">
+      <div className="fixed w-full flex justify-around items-center border border-b-black  bg-[var(--color-mint-200)] h-[67px]">
         {/* Logo */}
         <div className="max-[480px]:absolute left-0 pl-2">
           <h1>logo</h1>
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto max-[480px]:hidden">
-          {["home", "contact", "about", "article"].map((page) => (
+        <div className="flex m-auto max-[600px]:hidden sm:hidden">
+          {["home","about","article","contact"].map((page) => (
             <nav key={page} className="flex ">
               <button
                 onClick={() => {
                   scrollToSection(getSectionRef(page));
                   setIsActivated(page);
                 }}
-                className={`px-4 py-2 ${
+                className={`px-4 py-2 ml-10 rounded-4xl text-[18px] lato-light ${
                   isActivated === page
-                    ? "bg-blue-500 text-white"
+                    ? "bg-gray-700 text-zinc-300"
                     : "bg-gray-200"
                 }`}
               >
@@ -85,10 +85,10 @@ function Navbar({
         </div>
 
         {/* Icone Navbar Mobile */}
-        <div className="lg:hidden max-[480px]:absolute right-2.5 pr-2">
+        <div className="lg:hidden md:hidden sm:hidden max-[480px]:absolute right-2.5 pr-2">
           <button
             onClick={toggleMenu}
-            className="text-gray-700 focus:outline-none text-[20px] "
+            className="text-gray-700 focus:outline-none text-[20px]"
           >
             {isMenuOpen ? (
               <FontAwesomeIcon icon={faBars} className="hidden" />
