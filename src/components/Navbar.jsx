@@ -51,14 +51,15 @@ function Navbar({
 
   return (
     <>
-      <div className="flex justify-around items-center p-5 border border-b-black ">
+    
+      <div className="flex justify-around items-center border border-b-black  bg-[var(--color-mint-200)] h-[67px]">
         {/* Logo */}
-        <div>
+        <div className="max-[480px]:absolute left-0 pl-2">
           <h1>logo</h1>
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto">
+        <div className="flex m-auto max-[480px]:hidden">
         {["home", "contact", "about", "article"].map((page) => (
           <nav key={page} className="flex ">
           <button
@@ -77,10 +78,10 @@ function Navbar({
         </div>
 
         {/* Icone Navbar Mobile */}
-        <div className="lg:hidden">
+        <div className="lg:hidden max-[480px]:absolute right-2.5 pr-2">
           <button
             onClick={toggleMenu}
-            className="text-blue-500 focus:outline-none"
+            className="text-[var(--color-mint-100)] focus:outline-none text-[20px] "
           >
             {isMenuOpen ? (
               <FontAwesomeIcon icon={faBars} className="hidden" />
@@ -91,6 +92,7 @@ function Navbar({
         </div>
       </div>
 
+
        {/* Menu Mobile */}
 
       <div
@@ -98,26 +100,33 @@ function Navbar({
           transition: "transform 0.2s ease-in-out",
           transform: isMenuOpen ? "scale(1)" : "scale(0)",
         }}
-        className="fixed inset-0 bg-gray-800 bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto p-4 pb-44 "
-      >
+        className="fixed border inset-0 bg-[var(--color-mint-300)] bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto"
+      > 
+        
         <button
           onClick={toggleMenu}
-          className="absolute top-5 right-5 text-blue-500 focus:outline-none"
+          className="absolute top-2.5 right-2.5 text-[var(--color-mint-100)] focus:outline-none text-[25px]"
         >
           {/* Ícone de fechar */}
           <FontAwesomeIcon icon={faCircleXmark} />
         </button>
-
-        <nav>
+        
+        <nav className="grid grid-rows-4 gap-0 mt-10 w-full h-[87%]">
+          <div className="border border-zinc-800 text-zinc-300 h-10"> 
           <button
+            className="w-full text-end"
             onClick={() => {
-              scrollToSection(aboutMeRef);
+              scrollToSection(homeRef);
               toggleMenu();
             }}
           >
             Home
           </button>
+          </div>
+          
+          <div className="border border-zinc-800 text-zinc-300 h-10"> 
           <button
+            className="w-full text-end"
             onClick={() => {
               scrollToSection(aboutMeRef);
               toggleMenu();
@@ -125,22 +134,29 @@ function Navbar({
           >
             Sobre Mim
           </button>
+          </div>
+          <div className="border border-zinc-800 text-zinc-300 h-10"> 
           <button
+            className="w-full text-end"
             onClick={() => {
-              scrollToSection(aboutMeRef);
+              scrollToSection(articlesRef);
               toggleMenu();
             }}
           >
             Artigos
           </button>
+          </div>
+          <div className="border border-zinc-800 text-zinc-300 h-10"> 
           <button
+            className="w-full text-end"
             onClick={() => {
-              scrollToSection(aboutMeRef);
+              scrollToSection(contactRef);
               toggleMenu();
             }}
           >
             Contato
           </button>
+          </div>
         </nav>
       </div>
     </>

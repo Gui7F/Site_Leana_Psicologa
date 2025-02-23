@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import "./App.css"
 import "./index.css";
 // Components
 import Navbar from "./components/Navbar";
@@ -15,7 +15,7 @@ function App() {
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    ref.current?.scrollIntoView({ behavior: "smooth", block:"start" });
   };
 
   return (
@@ -29,11 +29,11 @@ function App() {
       />
  
       {/* Seções do site */}
-      <div className>
-      <div ref={homeRef} className="section text-center"><Home /></div>
-      <div ref={aboutMeRef} className="section text-center"><AboutMe /></div>
-      <div ref={articlesRef} className="section text-center"><Articles /></div>
-      <div ref={contactRef} className="section text-center"><Contact /></div>
+      <div className="bg-[var(--color-mint-100)]" >
+      <div ref={homeRef} className="section text-center h-svh"><Home /></div>
+      <div ref={aboutMeRef} className="section text-center h-svh"><AboutMe /></div>
+      <div ref={articlesRef} className="section text-center h-svh"><Articles /></div>
+      <div ref={contactRef} className="section text-center h-svh"><Contact /></div>
       </div>
       </>
   );
