@@ -1,12 +1,16 @@
-import { useRef } from "react";
 import "./App.css"
 import "./index.css";
+
+//hooks
+import { useRef } from "react";
+
 // Components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
+
 
 function App() {
   const homeRef = useRef(null);
