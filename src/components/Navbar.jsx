@@ -57,14 +57,14 @@ function Navbar({
 
   return (
     <>
-      <div className="fixed w-full flex justify-around items-center border border-b-black  bg-[var(--color-mint-200)] h-[67px]">
+      <div className="fixed w-full flex justify-around items-center border border-b-black  bg-mint-200 h-[67px]">
         {/* Logo */}
         <div className="max-[480px]:absolute left-0 pl-2">
-          <h1>logo</h1>
+          <h1 className="text">logo</h1>
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto max-[600px]:hidden sm:hidden">
+        <div className="flex m-auto ">
           {["home","about","article","contact"].map((page) => (
             <nav key={page} className="flex ">
               <button
@@ -72,7 +72,7 @@ function Navbar({
                   scrollToSection(getSectionRef(page));
                   setIsActivated(page);
                 }}
-                className={`px-4 py-2 ml-10 rounded-4xl text-[18px] lato-light ${
+                className={`px-4 py-2 ml-10 rounded-2xl text-[18px] lato-light ${
                   isActivated === page
                     ? "bg-gray-700 text-zinc-300"
                     : "bg-gray-200"

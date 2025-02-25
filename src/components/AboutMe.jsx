@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <div className="">
-      <h1 className="">Sobre Mim</h1>
+      <h1 className="text-start">Sobre Mim</h1>
       <div className="flex w-[1000px]">
       <p className="w-1/2">
         Durante a minha graduação, tive o privilégio de ter dois filhos. Sempre
