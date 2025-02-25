@@ -64,7 +64,7 @@ function Navbar({
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto ">
+        <div className="flex m-auto max-[480px]:hidden">
           {["home","about","article","contact"].map((page) => (
             <nav key={page} className="flex ">
               <button
