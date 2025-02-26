@@ -65,24 +65,27 @@ function Navbar({
 
         {/* Navbar */}
         <div className="flex m-auto max-[480px]:hidden">
-          {["home","about","article","contact"].map((page) => (
-            <nav key={page} className="flex ">
-              <button
-                onClick={() => {
-                  scrollToSection(getSectionRef(page));
-                  setIsActivated(page);
-                }}
-                className={`px-4 py-2 ml-10 rounded-2xl text-[18px] lato-light ${
-                  isActivated === page
-                    ? "bg-gray-700 text-zinc-300"
-                    : "bg-gray-200"
-                }`}
-              >
-                {getButtonLabel(page)}
-              </button>
-            </nav>
-          ))}
-        </div>
+  {["home", "about", "article", "contact"].map((page) => (
+    <nav key={page} className="flex">
+      <button
+        onClick={() => {
+          scrollToSection(getSectionRef(page));
+          setIsActivated(page);
+        }}
+        className={`relative px-6 py-1 ml-10 rounded-2xl text-[18px] font-extrabold transition-all duration-300 overflow-hidden shadow-lg
+          ${isActivated === page ? "text-zinc-300" : "text-gray-900"}
+          `}
+      >
+        <span className="relative z-10">{getButtonLabel(page)}</span>
+        <span
+          className={`absolute top-0 left-0 w-full h-full bg-gray-900 rounded-2xl transition-all duration-300 -z-10
+            ${isActivated === page ? "scale-x-100" : "scale-x-0"}
+          `}
+        ></span>
+      </button>
+    </nav>
+  ))}
+</div>
 
         {/* Icone Navbar Mobile */}
         <div className="lg:hidden md:hidden sm:hidden max-[480px]:absolute right-2.5 pr-2">

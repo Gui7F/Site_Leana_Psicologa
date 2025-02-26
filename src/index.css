@@ -1,23 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 
 body{
   background-color: #4B5563;
 }
 
+/* width of component main */
 .main_width{
   width : 1500px ;
 }
 
-.lato-thin {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
   
+  /* Font- Lato*/
   .lato-light {
     font-family: "Lato", serif;
     font-weight: 300;
@@ -33,5 +30,13 @@ body{
   .lato-bold {
     font-family: "Lato", serif;
     font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Font-Playfair */
+  .playfair-display-extrabold {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
   }
