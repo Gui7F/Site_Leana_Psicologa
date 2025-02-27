@@ -11,6 +11,7 @@ export default {
         'mint-200': '#C2DCF2',
         'mint-250': '#5F7A8C',
         'mint-300': '#2E5D89',
+        'mint-400' : '#6085A6',
         'font-100': '#F0F3F5',
         'font-gray': '#4B5563',
       },
