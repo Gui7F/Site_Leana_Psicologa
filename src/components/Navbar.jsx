@@ -72,13 +72,13 @@ function Navbar({
           scrollToSection(getSectionRef(page));
           setIsActivated(page);
         }}
-        className={`relative px-6 py-1 ml-10 rounded-2xl text-[18px] font-extrabold transition-all duration-300 overflow-hidden shadow-lg
+        className={`relative px-6 py-1 ml-10 rounded-2xl text-[16px] font-extrabold transition-all duration-300 overflow-hidden 
           ${isActivated === page ? "text-zinc-300" : "text-gray-900"}
           `}
       >
         <span className="relative z-10">{getButtonLabel(page)}</span>
         <span
-          className={`absolute top-0 left-0 w-full h-full bg-gray-900 rounded-2xl transition-all duration-300 -z-10
+          className={`absolute top-0 left-0 w-full h-full bg-zinc-700 rounded-2xl transition-all duration-300 -z-10
             ${isActivated === page ? "scale-x-100" : "scale-x-0"}
           `}
         ></span>
