@@ -28,11 +28,11 @@ const Main = () => {
         />
    
         {/* Seções do site */}
-        <div className="bg-mint-100 w-1500 m-auto p-2" >
-        <div ref={homeRef} className="section text-center h-svh  pt-[80px]"><Home /></div>
-        <div ref={aboutMeRef} className="section text-center h-svh pt-[80px]"><AboutMe /></div>
-        <div ref={articlesRef} className="section text-center h-svh pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 " ><Articles /></div>
-        <div ref={contactRef} className="section text-center h-svh pt-[80px]"><Contact /></div>
+        <div className="bg-mint-100 lg:w-1500 m-auto p-2" >
+          <div ref={homeRef} className="section text-center h-svh  pt-[80px]"><Home /></div>
+          <div ref={aboutMeRef} className="section text-center h-svh pt-[80px]"><AboutMe /></div>
+          <div ref={articlesRef} className="section text-center h-svh pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 " ><Articles /></div>
+          <div ref={contactRef} className="section  h-svh pt-[80px] lato-bold"><Contact /></div>
         </div>
   
   

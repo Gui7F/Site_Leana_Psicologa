@@ -39,17 +39,17 @@ const Contato = () => {
   };
 
   return (
-    <main className="flex justify-center items-center lg:h-screen max-[400px]:p-5 ">
-      <div className="w-full max-w-md border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500">
+    <main className="flex justify-center text-zinc-800 lg:mt-72 mt-20">
+      <div className="w-full lg:max-w-xl max-w-sm border border-zinc-600 p-6 rounded-lg ">
       <form onSubmit={handleSubmit} >
        <div className="mb-4">
-        <h1 className="lg:text-3xl max-[400px]:text-2xl text-slate-300">Contacte-me <i className="fa-solid fa-comments"></i></h1>
+        <h1 className="lg:text-3xl max-[400px]:text-2xl ">Email<i className="fa-solid fa-comments"></i></h1>
        </div>
 
       <div className="mb-4">
           <label
             htmlFor="nome"
-            className="block text-sm font-medium text-slate-300 "
+            className="block text-start text-base font-medium  "
           >
             Nome:
           </label>
@@ -60,7 +60,7 @@ const Contato = () => {
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             required
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-gray-900 focus:border-gray-900"
             placeholder="Digite seu nome"
           />
         </div>
@@ -68,7 +68,7 @@ const Contato = () => {
         <div className="mb-4">
           <label
             htmlFor="nome"
-            className="block text-sm font-medium text-slate-300"
+            className="block text-base text-start font-medium "
           >
             Email:
           </label>
@@ -77,7 +77,7 @@ const Contato = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-gray-900 focus:border-gray-900"
             placeholder="Digite seu email"
           />
         </div>
@@ -85,7 +85,7 @@ const Contato = () => {
         <div className="mb-4">
           <label
             htmlFor="nome"
-            className="block text-sm font-medium text-slate-300"
+            className="block text-base text-start font-medium "
           >
             Mensagem:
           </label>
@@ -93,11 +93,11 @@ const Contato = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="mt-1 block w-full p-2 h-40 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            className="mt-1 block w-full p-2 h-40 border border-gray-300 rounded-md focus:ring-gray-900 focus:border-gray-900"
           />
         </div>
         <div className="flex justify-end">
-          <button><FontAwesomeIcon icon={faPaperPlane}/></button>
+          <button className="text-3xl"><FontAwesomeIcon icon={faPaperPlane}/></button>
         </div>
       </form>
       </div>
