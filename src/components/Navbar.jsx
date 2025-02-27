@@ -5,9 +5,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
-import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faAddressCard } from "@fortawesome/free-solid-svg-icons"; 
-import { faBook } from "@fortawesome/free-solid-svg-icons"; 
+import {
+  faSquareWhatsapp,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 //hook
 import { useState } from "react";
@@ -65,27 +68,36 @@ function Navbar({
 
         {/* Navbar */}
         <div className="flex m-auto max-[480px]:hidden">
-  {["home", "about", "article", "contact"].map((page) => (
-    <nav key={page} className="flex">
-      <button
-        onClick={() => {
-          scrollToSection(getSectionRef(page));
-          setIsActivated(page);
-        }}
-        className={`relative px-6 py-1 ml-10 rounded-2xl text-[16px] font-extrabold transition-all duration-300 overflow-hidden 
+          {["home", "about", "article", "contact"].map((page) => (
+            <nav key={page} className="flex">
+              <button
+                onClick={() => {
+                  scrollToSection(getSectionRef(page));
+                  setIsActivated(page);
+                }}
+                className={`relative px-6 py-1 ml-10 rounded-2xl text-[16px] font-extrabold transition-all duration-300 overflow-hidden 
           ${isActivated === page ? "text-zinc-300" : "text-gray-900"}
           `}
-      >
-        <span className="relative z-10">{getButtonLabel(page)}</span>
-        <span
-          className={`absolute top-0 left-0 w-full h-full bg-zinc-700 rounded-2xl transition-all duration-300 -z-10
+              >
+                <span className="relative z-10">{getButtonLabel(page)}</span>
+                <span
+                  className={`absolute top-0 left-0 w-full h-full bg-zinc-700 rounded-2xl transition-all duration-300 -z-10
             ${isActivated === page ? "scale-x-100" : "scale-x-0"}
           `}
-        ></span>
-      </button>
-    </nav>
-  ))}
-</div>
+                ></span>
+              </button>
+            </nav>
+          ))}
+        </div>
+        <div className="max-[480px]:hidden">
+          <button className="relative flex items-center px-4 py-2 border border-zinc-600 text-zinc-600 font-semibold text-lg rounded-full transition-all duration-300 overflow-hidden hover:text-white hover:border-zinc-600 group">
+            <span className="mx-2">
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </span>
+            Whatsapp
+            <span className="absolute inset-0 w-full h-full bg-[#25D366] rounded-full transition-transform duration-500 scale-0 -z-10 group-hover:scale-150"></span>
+          </button>
+        </div>
 
         {/* Icone Navbar Mobile */}
         <div className="lg:hidden md:hidden sm:hidden max-[480px]:absolute right-2.5 pr-2">
@@ -127,7 +139,7 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Home <FontAwesomeIcon icon={faHouse}/>
+                Home <FontAwesomeIcon icon={faHouse} />
               </button>
             </div>
 
@@ -139,7 +151,7 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Sobre Mim <FontAwesomeIcon icon={faAddressCard}/>
+                Sobre Mim <FontAwesomeIcon icon={faAddressCard} />
               </button>
             </div>
 
@@ -151,7 +163,7 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Artigos <FontAwesomeIcon icon={faBook}/>
+                Artigos <FontAwesomeIcon icon={faBook} />
               </button>
             </div>
 
@@ -163,7 +175,7 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Contato <FontAwesomeIcon icon={faComment}/>
+                Contato <FontAwesomeIcon icon={faComment} />
               </button>
             </div>
 
@@ -175,7 +187,7 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                WhatsApp <FontAwesomeIcon icon={faSquareWhatsapp}/>
+                WhatsApp <FontAwesomeIcon icon={faSquareWhatsapp} />
               </button>
             </div>
           </nav>

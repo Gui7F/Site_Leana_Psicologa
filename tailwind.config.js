@@ -14,6 +14,7 @@ export default {
         'mint-400' : '#6085A6',
         'font-100': '#F0F3F5',
         'font-gray': '#4B5563',
+        'whatsapp' : '#25D366',
       },
       width: {
         '1500': '1500px', 
