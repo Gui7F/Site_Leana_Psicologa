@@ -10,7 +10,7 @@ const Articles = () => {
       </div>
 
       <div className="border-b border-zinc-600 text-start pt-5 pb-5 lg:text-2xl">
-        <Link target="_blank" to="article_1">
+        <Link  to="article_1">
           <div className="flex">
             <span className="pl-4 pr-3">1º</span>
             <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300">
@@ -22,7 +22,7 @@ const Articles = () => {
       </div>
 
       <div className="border-b border-zinc-600 text-start pt-5 pb-5 lg:text-2xl">
-        <Link target="_blank" to="article_1">
+        <Link  to="article_2">
           <div className="flex">
             <span className="pl-4 pr-3">2º</span>
             <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300">
@@ -34,7 +34,7 @@ const Articles = () => {
       </div>
 
       <div className="border-b border-zinc-600 text-start pt-5 pb-5 lg:text-2xl">
-        <Link target="_blank" to="article_1">
+        <Link  to="article_3">
           <div className="flex">
             <span className="pl-4 pr-3">3º</span>
             <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300">
@@ -46,25 +46,23 @@ const Articles = () => {
       </div>
 
       <div className="border-b border-zinc-600 text-start pt-5 pb-5 lg:text-2xl">
-        <Link target="_blank" to="article_1">
+        <Link  to="article_4">
           <div className="flex">
             <span className="pl-4 pr-3">4º</span>
             <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300">
-              A TCC foca no presente e busca modificar padrões de pensamento e
-              comportamento que causam sofrimento. Para crianças e adolescentes,
-              isso pode significar:
+            Psicanálise x Terapias Comportamentais: Qual a Melhor Opção para Crianças e Adolescentes?
             </h2>
           </div>
         </Link>
       </div>
 
       <div className="border-b border-zinc-600 text-start pt-5 pb-5 lg:text-2xl">
-        <Link target="_blank" to="article_1">
+        <Link  to="article_5">
           <div className="flex">
             <span className="pl-4 pr-3">5º</span>
             <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300">
-              Como a psicanálise ajuda crianças que não sabem falar sobre seus
-              sentimentos?
+            Atendimento Psicológico Online: Vantagens, Desafios e o Papel do Sexo do Terapeuta 
+            (Por Leana Beraldo, Psicóloga Clínica com Abordagem Psicanalítica)  
             </h2>
           </div>
         </Link>

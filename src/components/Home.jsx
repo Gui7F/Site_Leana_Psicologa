@@ -5,7 +5,7 @@ const Home = () => {
         <h1 className="lg:text-9xl text-5xl playfair-display-extrabold absolute z-0">
           Leana Beraldo
         </h1>
-        <h2 className="lg:text-5xl text-2xl lg:ml-3 lg:mt-[125px] mt-[50px] playfair-display-extrabold">Psicóloga Infantil</h2>
+        <h2 className="lg:text-5xl text-2xl lg:ml-3 lg:mt-[125px] mt-[50px] playfair-display-extrabold">Psicóloga Cliníca</h2>
         <p className="lg:text-[20px] w-full lg:ml-3 ">
           Olá, seja bem vindo(a), meu nome é Leana da Costa Beraldo amet
           consectetur adipisicing elit. Saepe, rerum deserunt reiciendis eos
