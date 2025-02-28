@@ -2,11 +2,11 @@ const Home = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-20 lg:ml-44 lg:mt-44 text-start">
       <div className="lg:mt-44 ">
-        <h1 className="lg:text-9xl text-5xl playfair-display-extrabold absolute">
+        <h1 className="lg:text-9xl text-5xl playfair-display-extrabold absolute z-0">
           Leana Beraldo
         </h1>
-        <h2 className="lg:text-5xl text-2xl hidden">Psicóloga Infantil</h2>
-        <p className="text-[18px] w-[300px]  hidden">
+        <h2 className="lg:text-5xl text-2xl lg:ml-3 lg:mt-[125px] mt-[50px] playfair-display-extrabold">Psicóloga Infantil</h2>
+        <p className="lg:text-[20px] w-full lg:ml-3 ">
           Olá, seja bem vindo(a), meu nome é Leana da Costa Beraldo amet
           consectetur adipisicing elit. Saepe, rerum deserunt reiciendis eos
           quia quod beatae nemo deleniti! Soluta accusamus rem id cum

@@ -1,9 +1,9 @@
 const AboutMe = () => {
   return (
-    <div className="">
-      <h1 className="text-start text-5xl">Sobre Mim</h1>
-      <div className="flex w-[1000px]">
-      <p className="w-1/2">
+    <div className="lg:max-w-7xl m-auto lg:mt-80 lg:ml-60 w-full">
+      <h1 className="text-start lg:text-5xl text-2xl playfair-display-extrabold">Sobre Mim</h1>
+      <div className="lg:flex lg:w-[1000px]">
+      <p className="lg:w-1/2 text-start mr-7 lg:text-xl">
         Durante a minha graduação, tive o privilégio de ter dois filhos. Sempre
         fui apaixonada pela psicologia infantil, mas foi nesse período que
         percebi, na prática, o quão desafiador é entender e acolher os
@@ -16,32 +16,13 @@ const AboutMe = () => {
         usá-lo tanto no desenvolvimento dos meus filhos quanto no cuidado dos
         meus pacientes.
       </p>
-      
-      <div className="grid grid-cols-2 w-[500px] h-[300px] m-auto ">
-        <div className="overflow-hidden h-[250px] w-[250px]">
+        <div className="overflow-hidden lg:h-[500px] lg:w-[500px] sm:w-[250px] sm:h-[250px] mb-52">
           <img
             className="w-full h-full object-cover"
-            src="./fotos-sobre-mim4.jpg"
+            src="./fotos-sobre-mim1.png"
             alt=""
           />
         </div>
-
-        <div className="overflow-hidden h-[500px] w-[500px]">
-          <img
-            className="w-full h-full object-cover"
-            src="./fotos-sobre-mim1.jpg"
-            alt=""
-          />
-        </div>
-
-        <div className="overflow-hidden h-[250px] w-[250px] absolute">
-          <img
-            className="w-full h-full object-cover "
-            src="./fotos-sobre-mim3.jpg"
-            alt=""
-          />
-        </div>
-      </div>
       </div>
     </div>
   );

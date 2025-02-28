@@ -67,7 +67,7 @@ function Navbar({
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto max-[480px]:hidden">
+        <div className="flex m-auto max-[480px]:hidden z-50">
           {["home", "about", "article", "contact"].map((page) => (
             <nav key={page} className="flex">
               <button
@@ -89,7 +89,7 @@ function Navbar({
             </nav>
           ))}
         </div>
-        <div className="max-[480px]:hidden">
+        <div className="max-[480px]:hidden mr-3">
           <button className="relative flex items-center px-4 py-2 border border-zinc-600 text-zinc-600 font-semibold text-lg rounded-full transition-all duration-300 overflow-hidden hover:text-white hover:border-zinc-600 group">
             <span className="mx-2">
               <FontAwesomeIcon icon={faWhatsapp} />
@@ -121,7 +121,7 @@ function Navbar({
           transition: "transform 0.2s ease-in-out",
           transform: isMenuOpen ? "scale(1)" : "scale(0)",
         }}
-        className="fixed border inset-0 bg-gray-700 bg-opacity-60 flex flex-col items-end justify-center z-50 w-3/4 ml-auto"
+        className="fixed border inset-0 bg-gray-700 bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto"
       >
         <div className="absolute  top-[25px] w-full text-[18px]">
           <button
