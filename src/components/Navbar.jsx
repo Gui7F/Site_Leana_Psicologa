@@ -60,14 +60,14 @@ function Navbar({
 
   return (
     <>
-      <div className="fixed w-full flex justify-around items-center border border-b-black  bg-mint-200 h-[67px]">
+      <div className="fixed z-50 w-full flex justify-around items-center border border-b-black  bg-mint-200 h-[67px]">
         {/* Logo */}
         <div className="max-[480px]:absolute left-0 pl-2">
           <h1 className="text">logo</h1>
         </div>
 
         {/* Navbar */}
-        <div className="flex m-auto max-[480px]:hidden z-50">
+        <div className="flex m-auto max-[1000px]:hidden z-50">
           {["home", "about", "article", "contact"].map((page) => (
             <nav key={page} className="flex">
               <button
@@ -89,18 +89,26 @@ function Navbar({
             </nav>
           ))}
         </div>
-        <div className="max-[480px]:hidden mr-3">
-          <button className="relative flex items-center px-4 py-2 border border-zinc-600 text-zinc-600 font-semibold text-lg rounded-full transition-all duration-300 overflow-hidden hover:text-white hover:border-zinc-600 group">
-            <span className="mx-2">
+        {/* whatsapp pc nav bar */}
+        <div className="max-[1000px]:hidden mr-3">
+          <button
+            onClick={() =>
+              window.open(
+                "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta",
+                "_blank"
+              )
+            }
+            className="relative flex items-center px-4 py-2 border border-zinc-600 text-zinc-600 font-semibold text-lg rounded-full transition-all duration-300 overflow-hidden hover:text-white hover:border-zinc-600 group"
+          >
+            <span className=" text-2xl ">
               <FontAwesomeIcon icon={faWhatsapp} />
             </span>
-            Whatsapp
             <span className="absolute inset-0 w-full h-full bg-[#25D366] rounded-full transition-transform duration-500 scale-0 -z-10 group-hover:scale-150"></span>
           </button>
         </div>
 
         {/* Icone Navbar Mobile */}
-        <div className="lg:hidden md:hidden sm:hidden max-[480px]:absolute right-2.5 pr-2">
+        <div className="lg:hidden max-[480px]:absolute right-2.5 pr-2">
           <button
             onClick={toggleMenu}
             className="text-gray-700 focus:outline-none text-[20px]"
@@ -178,13 +186,16 @@ function Navbar({
                 Contato <FontAwesomeIcon icon={faComment} />
               </button>
             </div>
-
+            {/* whatsapp mobile */}
             <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center">
               <button
-                className="w-full text-end px-4"
                 onClick={() => {
-                  scrollToSection(contactRef);
-                  toggleMenu();
+                  const link = document.createElement("a");
+                  link.href =
+                    "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta";
+                  link.target = "_blank";
+                  link.click();
+                  toggleMenu(); // Fecha o menu
                 }}
               >
                 WhatsApp <FontAwesomeIcon icon={faSquareWhatsapp} />

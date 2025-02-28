@@ -1,8 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import "../Sendbutton.css"
- import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import "../Sendbutton.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const Contato = () => {
   const [nome, setNome] = useState("");
@@ -46,7 +46,7 @@ const Contato = () => {
       <div className="w-full lg:max-w-xl max-w-sm border border-zinc-600 p-6 rounded-lg ">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <h1 className="lg:text-3xl max-[400px]:text-2xl ">
+            <h1 className="lg:text-3xl text-xl max-[400px]:text-2xl ">
               Email<i className="fa-solid fa-comments"></i>
             </h1>
           </div>
@@ -102,20 +102,18 @@ const Contato = () => {
             />
             {/* SendButton form */}
             <div className="flex justify-end text-slate-300">
-      <button className="sendbutton">
-        <div className="svg-wrapper">
-          <FontAwesomeIcon icon={faPaperPlane} />
-        </div>
-        <span className="block ml-[0.3em] transition-all duration-300 ease-in-out">Enviar</span>
-      </button>
-    </div>
-
+              <button className="sendbutton">
+                <div className="svg-wrapper">
+                  <FontAwesomeIcon icon={faPaperPlane} />
+                </div>
+                <span className="block ml-[0.3em] transition-all duration-300 ease-in-out">
+                  Enviar
+                </span>
+              </button>
+            </div>
           </div>
-
         </form>
-
       </div>
-
     </main>
   );
 };
