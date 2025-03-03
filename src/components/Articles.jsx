@@ -4,7 +4,7 @@ import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 const Articles = () => {
   return (
     <div className="border border-zinc-600 rounded-lg h-full max-w-7xl m-auto max-[480px]:w-full">
-      <div className="flex justify-between lg:text-5xl text-2xl border-b border-b-zinc-600 bg-mint-300 rounded text-slate-200">
+      <div className="flex justify-between lg:text-5xl text-2xl border-b border-b-zinc-600 bg-mint-300 rounded text-color-text-content ">
         <h1 className="text-start p-3 playfair-display-extrabold">Artigos</h1>
         <FontAwesomeIcon icon={faPaperclip} className="p-3" />
       </div>

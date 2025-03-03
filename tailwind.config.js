@@ -1,3 +1,4 @@
+// 'color-button-home' : '#C0A59E'
 export default {
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",  
@@ -5,19 +6,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'mint-50': '#D0E3F2',
-        'mint-150': '#91AAB9',
-        'mint-100': '#A7C1D9',
-        'mint-200': '#C2DCF2',
-        'mint-250': '#5F7A8C',
-        'mint-300': '#2E5D89',
-        'mint-400' : '#6085A6',
+        'color-button' : '#8798A9',
+        'color-button-home' : '#C0A59E',
+        'color-pastel' : '#e5dfcc',
+        'color-clear' : '#F3F0E7',
         'font-100': '#F0F3F5',
-        'font-gray': '#4B5563',
+        'color-text-content': '#27272a',
         'whatsapp' : '#25D366',
       },
       width: {
-        '1500': '1500px', 
+        'width-content': '1500px', 
       }
     },
   },

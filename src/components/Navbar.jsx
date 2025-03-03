@@ -45,13 +45,13 @@ function Navbar({
   const getButtonLabel = (page) => {
     switch (page) {
       case "home":
-        return "Home";
+        return "HOME";
       case "about":
-        return "Sobre Mim";
+        return "SOBRE MIM";
       case "article":
-        return "Artigos";
+        return "ARTIGOS";
       case "contact":
-        return "Contato";
+        return "CONTATO";
       default:
         return page;
     }
@@ -60,7 +60,7 @@ function Navbar({
 
   return (
     <>
-      <div className="fixed z-50 w-full flex justify-around items-center border border-b-black  bg-mint-200 h-[67px]">
+      <div className="fixed z-50 w-full flex justify-around items-center border border-b-black  bg-color-clear h-[67px]">
         {/* Logo */}
         <div className="max-[480px]:absolute left-0 pl-2">
           <h1 className="text">logo</h1>
@@ -69,19 +69,19 @@ function Navbar({
         {/* Navbar */}
         <div className="flex m-auto max-[1000px]:hidden z-50">
           {["home", "about", "article", "contact"].map((page) => (
-            <nav key={page} className="flex">
+            <nav key={page} className="flex lato-light">
               <button
                 onClick={() => {
                   scrollToSection(getSectionRef(page));
                   setIsActivated(page);
                 }}
-                className={`relative px-6 py-1 ml-10 rounded-2xl text-[16px] font-extrabold transition-all duration-300 overflow-hidden 
+                className={`relative px-6 py-1 ml-10  text-[16px]  transition-all duration-300 overflow-hidden 
           ${isActivated === page ? "text-zinc-300" : "text-gray-900"}
           `}
               >
                 <span className="relative z-10">{getButtonLabel(page)}</span>
                 <span
-                  className={`absolute top-0 left-0 w-full h-full bg-zinc-700 rounded-2xl transition-all duration-300 -z-10
+                  className={`absolute top-0 left-0 w-full h-full bg-color-button  transition-all duration-300 -z-10
             ${isActivated === page ? "scale-x-100" : "scale-x-0"}
           `}
                 ></span>
@@ -129,17 +129,17 @@ function Navbar({
           transition: "transform 0.2s ease-in-out",
           transform: isMenuOpen ? "scale(1)" : "scale(0)",
         }}
-        className="fixed border inset-0 bg-gray-700 bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto"
+        className="fixed border inset-0 bg-color-clear bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto lato-thin"
       >
         <div className="absolute  top-[25px] w-full text-[18px]">
           <button
             onClick={toggleMenu}
-            className="absolute top-[-10px] right-2.5 text-zinc-300 focus:outline-none text-[25px]"
+            className="absolute top-[-10px] right-2.5  focus:outline-none text-[25px]"
           >
             <FontAwesomeIcon icon={faCircleXmark} />
           </button>
-          <nav className="lato-bold grid grid-rows-5 gap-0 mt-10 w-full  border border-zinc-800">
-            <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center ">
+          <nav className=" grid grid-rows-5 gap-0 mt-10 w-full  border border-zinc-800">
+            <div className="border-b border-zinc-800  h-14 flex items-center ">
               <button
                 className="w-full text-end px-4"
                 onClick={() => {
@@ -147,11 +147,11 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Home <FontAwesomeIcon icon={faHouse} />
+                HOME <FontAwesomeIcon icon={faHouse} />
               </button>
             </div>
 
-            <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center">
+            <div className="border-b border-zinc-800  h-14 flex items-center">
               <button
                 className="w-full text-end px-4"
                 onClick={() => {
@@ -159,11 +159,11 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Sobre Mim <FontAwesomeIcon icon={faAddressCard} />
+                SOBRE MIM <FontAwesomeIcon icon={faAddressCard} />
               </button>
             </div>
 
-            <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center">
+            <div className="border-b border-zinc-800  h-14 flex items-center">
               <button
                 className="w-full text-end px-4"
                 onClick={() => {
@@ -171,11 +171,11 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Artigos <FontAwesomeIcon icon={faBook} />
+                ARTIGOS <FontAwesomeIcon icon={faBook} />
               </button>
             </div>
 
-            <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center">
+            <div className="border-b border-zinc-800  h-14 flex items-center">
               <button
                 className="w-full text-end px-4"
                 onClick={() => {
@@ -183,22 +183,23 @@ function Navbar({
                   toggleMenu();
                 }}
               >
-                Contato <FontAwesomeIcon icon={faComment} />
+                CONTATO <FontAwesomeIcon icon={faComment} />
               </button>
             </div>
             {/* whatsapp mobile */}
-            <div className="border-b border-zinc-800 text-zinc-300 h-14 flex items-center">
+            <div className="border-b border-zinc-800  h-14 flex items-center">
               <button
+                className="w-full text-end px-4"
                 onClick={() => {
-                  const link = document.createElement("a");
-                  link.href =
-                    "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta";
-                  link.target = "_blank";
-                  link.click();
+                  window.open(
+                    "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta",
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
                   toggleMenu(); // Fecha o menu
                 }}
               >
-                WhatsApp <FontAwesomeIcon icon={faSquareWhatsapp} />
+                WHATSAPP <FontAwesomeIcon icon={faSquareWhatsapp} />
               </button>
             </div>
           </nav>
