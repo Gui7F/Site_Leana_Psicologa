@@ -2,7 +2,8 @@ import BackButton from "./BackButton";
 
 const Article_3 = () => {
   return (
-    <div className="lg:w-[90%] max-w-[1500px] bg-zinc-700 m-auto text-xl p-10 text-slate-200">
+    <div className="bg-[url('./assets/img/bg-aboutme-1920x1080.png')]">
+    <div className="lg:w-[90%] max-w-[1500px] bg-  m-auto text-xl p-3 text-color-text-content bg-[url('./assets/img/green-cup-1920x1080.png')] text-justify">
       <BackButton />
       <h1 className="lg:text-5xl text-3xl font-bold text-center mb-6">
         Sinais de que seu filho precisa de ajuda psicológica (e não é só uma fase)
@@ -58,6 +59,7 @@ const Article_3 = () => {
       <p className="mb-4">
         Se um ou mais desses sinais se tornaram frequentes e estão impactando a rotina do seu filho, um acompanhamento psicológico pode fazer a diferença. Um profissional especializado pode ajudá-lo a compreender e lidar com suas emoções de forma saudável.
       </p>
+    </div>
     </div>
   );
 };

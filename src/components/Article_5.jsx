@@ -2,7 +2,8 @@ import BackButton from "./BackButton";
 
 const Article_5 = () => {
   return (
-    <div className="lg:w-[90%] max-w-[1500px] bg-zinc-700 m-auto text-xl p-10 text-slate-200">
+    <div className="bg-[url('./assets/img/bg-aboutme-1920x1080.png')]">
+    <div className="lg:w-[90%] w-full max-w-[1500px] m-auto text-xl p-3 text-color-text-content bg-[url('./assets/img/green-cup-1920x1080.png')] text-justify">
       <BackButton />
       <h1 className="lg:text-5xl text-3xl font-bold text-center mb-6">
         Atendimento Psicológico Online: Vantagens, Desafios e o Papel do Sexo do Terapeuta
@@ -111,6 +112,7 @@ const Article_5 = () => {
       <p className="mt-6">
         Espero que este artigo ajude a esclarecer dúvidas!
       </p>
+    </div>
     </div>
   );
 };
