@@ -12,9 +12,9 @@ const Contato = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_0yj6tgm";
-    const templateID = "template_mc26wi9";
-    const userID = "pnCCWaS-uwATSWwW9";
+    const serviceID = "service_suz553u";
+    const templateID = "template_g0rq1sa";
+    const publicKey = "RqSk6-T6ciXXcD-DX";
 
     const templateParams = {
       from_name: nome,
@@ -23,7 +23,7 @@ const Contato = () => {
     };
 
     emailjs
-      .send(serviceID, templateID, templateParams, userID)
+      .send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
         console.log(
           "E-mail enviado com sucesso!",
