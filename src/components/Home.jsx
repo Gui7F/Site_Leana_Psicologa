@@ -14,8 +14,16 @@ const Home = () => {
           quia quod beatae nemo deleniti! Soluta accusamus rem id cum
           voluptatibus excepturi quisquam
         </p>
-        <button 
-         className="w-auto px-5 py-3  text-center bg-color-button-home text-white rounded-lg mt-10 lg:ml-[80px] whitespace-nowrap">
+        <button
+          onClick={() => {
+            window.open(
+              "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+          className="w-auto px-5 py-3  text-center bg-color-button-home text-white rounded-lg mt-10 lg:ml-[80px] whitespace-nowrap"
+        >
           Entre em contato comigo
         </button>
       </div>

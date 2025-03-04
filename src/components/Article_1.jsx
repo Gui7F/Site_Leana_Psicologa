@@ -3,14 +3,16 @@ import BackButton from "./BackButton";
 const Article_1 = () => {
   return (
     <div className="bg-[url('./assets/img/bg-aboutme-1920x1080.png')]">
-      <div className="lg:w-[90%] max-w-[1500px] bg-  m-auto text-xl p-3 text-color-text-content bg-[url('./assets/img/green-cup-1920x1080.png')] text-justify">
+      <div className="lg:w-[90%] max-w-[1500px] bg-  m-auto text-xl p-3 text-color-text-content bg-[url('./assets/img/green-cup-1920x1080.png')] lg:text-justify">
         <BackButton />
-
+    
         <h1 className="lg:text-5xl text-3xl font-bold text-center mb-6">
           Como a psicanálise ajuda crianças que não sabem falar sobre seus
           sentimentos?
         </h1>
+        <div className="lg:w-2/3 lg:m-auto">
 
+        
         <p className="mb-4">
           Muitos pais se preocupam quando percebem que seus filhos têm
           dificuldades para expressar o que sentem. Crianças pequenas nem sempre
@@ -111,6 +113,7 @@ const Article_1 = () => {
           profissional pode ser um passo essencial para compreendê-lo melhor e
           oferecer o suporte necessário para seu desenvolvimento saudável.
         </p>
+        </div>
       </div>
     </div>
   );

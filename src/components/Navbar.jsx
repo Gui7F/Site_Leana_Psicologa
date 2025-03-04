@@ -63,7 +63,7 @@ function Navbar({
       <div className="fixed z-50 w-full flex justify-around items-center border border-b-black  bg-color-clear h-[67px]">
         {/* Logo */}
         <div className="max-[480px]:absolute left-0 pl-2">
-          <h1 className="text">logo</h1>
+          <img src="./logo.png" alt="" />
         </div>
 
         {/* Navbar */}
