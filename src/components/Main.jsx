@@ -47,7 +47,7 @@ const Main = () => {
         <div className="bg-cover bg-center m-auto border border-black bg-[url('./assets/img/green-cup-1920x1080.png')]">
           <div
             ref={articlesRef}
-            className="section text-center h-svh lg:w-width-content m-auto pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 "
+            className="section text-center h-svh lg:w-width-content m-auto pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 p-4 "
           >
             <Articles />
           </div>
