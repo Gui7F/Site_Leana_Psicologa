@@ -43,7 +43,7 @@ const Contato = () => {
 
   return (
     <main className="flex justify-center text-zinc-800 2xl:py-96 xl:py-60 md:py-64 py-32">
-      <div className="w-full 2xl:max-w-2xl xl:max-w-xl md:max-w-lg max-[480px]:max-w-xs max-w-sm border border-zinc-600 p-6 rounded-lg ">
+      <div className="w-full 2xl:max-w-2xl xl:max-w-xl md:max-w-lg max-[480px]:max-w-sm border border-zinc-600 p-6 rounded-lg ">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <h1 className="2xl:text-3xl xl:text-2xl text-xl max-[400px]:text-2xl ">
