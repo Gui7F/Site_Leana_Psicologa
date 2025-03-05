@@ -49,8 +49,8 @@ const articles = [
 
 export default function ArticleCarousel() {
   return (
-    <div className="border border-black rounded-lg lg:h-1/2 h-auto max-w-7xl m-auto w-full p-4 bg-[url('./assets/img/bg-aboutme-1920x1080.png')] lg:mt-60">
-      <div className="flex justify-between lg:text-5xl text-2xl border-b border-black bg-mint-300 rounded text-color-text-content">
+    <div className="border border-black rounded-lg 2xl:h-auto max-w-7xl m-auto w-full p-4 bg-[url('./assets/img/bg-aboutme-1920x1080.png')] 2xl:mt-60">
+      <div className="flex justify-between 2xl:text-5xl md:text-3xl text-2xl border-b border-black bg-mint-300 rounded text-color-text-content">
         <h1 className="text-start p-3 playfair-display-extrabold">Artigos</h1>
         <FontAwesomeIcon icon={faPaperclip} className="p-3" />
       </div>
@@ -74,7 +74,7 @@ export default function ArticleCarousel() {
         {articles.map((article, index) => (
           <SwiperSlide
             key={index}
-            className="border border-black rounded-lg p-4 bg-gray-100 flex flex-col justify-center items-center h-80"
+            className="border border-black rounded-lg p-4 bg-gray-100 flex flex-col justify-center items-center"
           >
             <Link to={article.id} className="block text-center">
               <img
@@ -82,7 +82,7 @@ export default function ArticleCarousel() {
                 alt={article.title}
                 className="w-full h-80 object-cover rounded mb-3"
               />
-              <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300 text-lg font-bold">
+              <h2 className="line-clamp-2 hover:line-clamp-none transition-all duration-300 2xl:text-lg md:text-base ">
                 {index + 1}º {article.title}
               </h2>
             </Link>
