@@ -1,8 +1,8 @@
 const AboutMe = () => {
   return (
-    <div className=" lg:mx-auto lg:w-full lg:pt-20 text-color-clear">
-      <div className="lg:flex">
-        <div className="w-full lg:max-w-[700px] lg:h-auto max-[480px]:pb-10 max-[480px]:pr-10 max-[480px]:pl-10">
+    <div className=" lg:mx-auto lg:w-full py-20 text-color-clear">
+      <div className="lg:flex lg:justify-center lg:items-center">
+        <div className="w-full lg:max-w-[600px] lg:h-auto max-[480px]:pb-10 max-[480px]:pr-10 max-[480px]:pl-10">
           <img
             className="w-full h-auto object-cover rounded-lg shadow-lg"
             src="./sobre-mim1.jpg"

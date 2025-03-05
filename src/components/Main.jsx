@@ -29,7 +29,7 @@ const Main = () => {
         <div className=" bg-cover bg-center m-auto border border-black bg-[url('./assets/img/green-cup-1920x1080.png')]">
           <div
             ref={homeRef}
-            className="  section text-center lg:h-svh lg:w-[1800px] m-auto pt-[170px] bg-[url('./assets/img/green-cup-1920x1080.png')]"
+            className="  section text-center xl:h-screen xl:w-[1500px] md:h-screen m-auto pt-[170px] bg-[url('./assets/img/green-cup-1920x1080.png')]"
           >
             <Home />
           </div>
@@ -38,7 +38,7 @@ const Main = () => {
         <div className="bg-cover bg-center m-auto border border-black bg-[url('./assets/img/bg-aboutme-1920x1080.png')] ">
           <div
             ref={aboutMeRef}
-            className="section text-center lg:h-svh lg:w-width-content m-auto pt-[80px] pb-[30px]"
+            className="section text-center h-auto lg:w-width-content m-auto "
           >
             <AboutMe />
           </div>
@@ -47,7 +47,7 @@ const Main = () => {
         <div className="bg-cover bg-center m-auto border border-black bg-[url('./assets/img/green-cup-1920x1080.png')]">
           <div
             ref={articlesRef}
-            className="section text-center h-svh lg:w-width-content m-auto pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 p-4 "
+            className="section text-center h-screen lg:w-width-content m-auto pt-[80px] lg:pl-4 lg:pr-4 lg:pb-4 p-4 "
           >
             <Articles />
           </div>
@@ -56,7 +56,7 @@ const Main = () => {
         <div className="bg-cover bg-center m-auto border border-black bg-[url('./assets/img/bg-aboutme-1920x1080.png')]">
           <div
             ref={contactRef}
-            className="section  h-svh pt-[80px] lg:w-width-content m-auto lato-bold"
+            className="section h-auto pt-[80px] lg:w-width-content m-auto lato-bold"
           >
             <Contact />
           </div>
